@@ -6,25 +6,162 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kylie's Cookbook</title>
-  <meta name="description" content="Come explore a variety of yummy recipes that are tried and true.">
+  <title>CSS Topic: Padding vs. Margin</title>
+  <meta name="description" content="Explore CSS topic.">
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="manifest" href="./site.webmanifest">
-  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="./favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="./browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="layoutstyles.css">
 
 </head>
 
 <body>
-  <h1> Kylie's Cookbook</h1>
-  <p>Welcome to my yummy cookbook.</p>
+  <main>
+    <h1>CSS Topic: Padding vs. Margin</h1>
+    <p>It's important to know the difference when formatting your page. You want the right things to be in the right
+      places. To demonstrate, we will start out with some content wrapped in a blue box. Through this reading you will
+      be able to see the effects of margin and padding to this content.</p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYjPgee"
+      data-user="kylieclark42"
+      style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/kylieclark42/pen/zYjPgee">
+          Untitled</a> by kylieclark42 (<a href="https://codepen.io/kylieclark42">@kylieclark42</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <h2>Margin</h2>
+    <p>The CSS margin properties are used to create space around elements, outside of any defined borders.
+      With CSS, you have full control over the margins. There are four different margin properties to use: margin-left,
+      margin-right,
+      margin-top, and margin-bottom. These can be seen in the diagram below. </p>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0090/9236/6436/files/image5_76c5d83a-f68a-4df1-aeec-9938b70113e1_1024x1024.png?v=1644801982"
+      alt="visual look at margin" width="400">
+    <p>With each of these properties, you will want to specify how many pixels you want the margin to be pushed and in
+      what direction. See here in our example with the blue box:
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYjPgee"
+      data-user="kylieclark42"
+      style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/kylieclark42/pen/zYjPgee">
+          Untitled</a> by kylieclark42 (<a href="https://codepen.io/kylieclark42">@kylieclark42</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <h3>Margin Short-hand</h3>
+    <p>To shorten the code, it is possible to specify all the margin properties in one property. In this property you
+      can
+      specify up to
+      four values to help the code know where to put things. Use the following list to see what each value means:
+    </p>
+    <ul>
+      <li class="bold">4-Values</li>
+      <ul>
+        <li class="italic">margin: 25px 50px 75px 100px;</li>
+        <ul>
+          <li>top margin is 25px</li>
+          <li>right margin is 50px</li>
+          <li>bottom margin is 75px</li>
+          <li>left margin is 100px</li>
+        </ul>
+      </ul>
+      <li class="bold">3-Values</li>
+      <ul>
+        <li class="italic">margin: 25px 50px 75px;</li>
+        <ul>
+          <li>top margin is 25px</li>
+          <li>right and left margin are 50px</li>
+          <li>bottom margin is 75px</li>
+        </ul>
+      </ul>
+      <li class="bold">2-Values</li>
+      <ul>
+        <li class="italic">margin: 25px 50px;</li>
+        <ul>
+          <li>top and bottom margin are 25px</li>
+          <li>right and left margin are 50px</li>
+        </ul>
+      </ul>
+      <li class="bold">1-Value</li>
+      <ul>
+        <li class="italic">margin: 25px;</li>
+        <ul>
+          <li>all four margins are 25px</li>
+        </ul>
+      </ul>
+    </ul>
+    <h3>Margin Collapse</h3>
+    <p>Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of
+      the
+      two margins.
+
+      This does not happen on left and right margins! Only top and bottom margins!
+    </p>
+    <h2>Padding</h2>
+    <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+      It is very similar
+      to margins with the use of its four properties: padding-right, padding-left, padding-top, and padding-bottom. See
+      the diagram below:
+    </p>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0090/9236/6436/files/image2_a137bc74-043b-4713-bdcd-38644e313ecb_1024x1024.png?v=1644802035"
+      alt="visual look at padding" width="400">
+    <p>Just like with margins, you will want to specify how many pixels you want the padding to be pushed and in
+      what direction. Lets return to our example with the blue box:
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYjPgee"
+      data-user="kylieclark42"
+      style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/kylieclark42/pen/zYjPgee">
+          Untitled</a> by kylieclark42 (<a href="https://codepen.io/kylieclark42">@kylieclark42</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <h3>Padding Short-hand</h3>
+    <p>To shorten the code, it is possible to specify all the padding properties in one property. In this property you
+      can
+      specify up to
+      four values to help the code know where to put things. Use the following list to see what each value means:
+    </p>
+    <ul>
+      <li class="bold">4-Values</li>
+      <ul>
+        <li class="italic">padding: 25px 50px 75px 100px;</li>
+        <ul>
+          <li>top padding is 25px</li>
+          <li>right padding is 50px</li>
+          <li>bottom padding is 75px</li>
+          <li>left padding is 100px</li>
+        </ul>
+      </ul>
+      <li class="bold">3-Values</li>
+      <ul>
+        <li class="italic">padding: 25px 50px 75px;</li>
+        <ul>
+          <li>top padding is 25px</li>
+          <li>right and left padding are 50px</li>
+          <li>bottom padding is 75px</li>
+        </ul>
+      </ul>
+      <li class="bold">2-Values</li>
+      <ul>
+        <li class="italic">padding: 25px 50px;</li>
+        <ul>
+          <li>top and bottom padding are 25px</li>
+          <li>right and left padding are 50px</li>
+        </ul>
+      </ul>
+      <li class="bold">1-Value</li>
+      <ul>
+        <li class="italic">padding: 25px;</li>
+        <ul>
+          <li>all four sides are padded 25px</li>
+        </ul>
+      </ul>
+    </ul>
+    <h2>Summary:</h2>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0090/9236/6436/files/image4_0897dee9-5a81-4608-a525-2b471085ce24_1024x1024.png?v=1644801938"
+      alt="visual look of margin and padding" width="800">
+  </main>
 </body>
 
 </html>

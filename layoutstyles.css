@@ -1,0 +1,30 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px 350px;
+}
+
+h1 {
+  color: #063970;
+}
+
+h2 {
+  color: #873e23;
+}
+
+h3 {
+  color: #e28743;
+}
+
+.underline {
+  text-decoration: underline;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+  color: maroon;
+}
